@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { StroryPage } from '../pages/strory/strory';
+import { SportsPage } from '../pages/sports/sports';
+import { TectnologyPage } from '../pages/tectnology/tectnology';
+import { NewsPage } from '../pages/news/news';
 
 
 import { HomePage } from '../pages/home/home';
-import { EmployeeDetalailsPage } from '../pages/employee-detalails/employee-detalails';
-import { EmployeesPage } from '../pages/employees/employees';
 @Component({
   templateUrl: 'app.html'
 })
