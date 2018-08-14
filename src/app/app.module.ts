@@ -4,46 +4,41 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { LoginPage } from '../pages/login/login';
+import { EmployeesPage } from '../pages/employees/employees';
+import { EmployeeDetalailsPage } from '../pages/employee-detalails/employee-detalails';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { DatabaseProvider } from '../providers/database/database';
-import { HttpClientModule } from '@angular/common/http';
-import { InfoPage } from '../pages/info/info';
-import { NewsPage } from '../pages/news/news';
-import { StroryPage } from '../pages/strory/strory';
-import { SportsPage } from '../pages/sports/sports';
-import { TectnologyPage } from '../pages/tectnology/tectnology';
+import { UpdatePage } from '../pages/update/update';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
     MyApp,
+    EmployeeDetalailsPage,
+    EmployeesPage,
+    LoginPage,
     HomePage,
-    InfoPage,
-    NewsPage,
-    StroryPage,
-    SportsPage,
-    TectnologyPage
+    UpdatePage
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    EmployeeDetalailsPage,
+    EmployeesPage,
+    LoginPage,
     HomePage,
-    InfoPage,
-    NewsPage,
-    StroryPage,
-    SportsPage,
-    TectnologyPage
+    UpdatePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DatabaseProvider
+    Camera,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

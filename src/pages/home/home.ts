@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
-import { NavController,ModalController, LoadingController } from 'ionic-angular';
-import { HttpClient } from '@angular/common/http';
-import { DatabaseProvider } from '../../providers/database/database';
-import { NewsPage } from '../news/news';
+import { NavController } from 'ionic-angular';
+
+import { LoginPage } from '../login/login';
+import { EmployeesPage } from '../employees/employees';
+import { EmployeeDetalailsPage } from '../employee-detalails/employee-detalails';
+import { UpdatePage } from '../update/update';
+
+import Emparr from '../ARR';
+import {Details} from '../Class';
 
 @Component({
   selector: 'page-home',
@@ -10,19 +15,13 @@ import { NewsPage } from '../news/news';
 })
 export class HomePage {
 
- 
-  constructor(public navCtrl: NavController,public provider: DatabaseProvider,public modalCtrl: ModalController,public loadingCtrl: LoadingController) {
+  home1Root =LoginPage;
+  home2Root = EmployeesPage;
+  home3Root = EmployeeDetalailsPage;
 
-  
+  constructor(public navCtrl: NavController) {
+
   }
 
-ionViewWillLoad(){
-  setTimeout(() => {
-    
-   let me = this.modalCtrl.create(NewsPage);
-    me.present();
-  }, 3000);
-}
   
-
 }
