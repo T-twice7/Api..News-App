@@ -1,0 +1,38 @@
+<!--
+  Generated template for the InfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>News</ion-title>
+    <button (click)="home()"><ion-icon name="home"></ion-icon></button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-content padding>
+         <marquee direction="down" scrollamount="90" behavior="slide" > 
+           <ion-card *ngFor="let i of article">
+              <img src="{{i.urlToImage}}"  [alt]="src">
+              <ion-card-content>
+                <ion-card-title>
+                    <h1>{{i.title}}</h1>
+                  </ion-card-title>
+                  
+                  <p>{{i.description}}. <a href="{{i.url}}">continue</a>
+                    </p>
+                 
+              </ion-card-content>
+              
+<!-- <ion-card-footer> -->
+    <p class="pel">published At: {{i.publishedAt}}</p>
+  <!-- </ion-card-footer> -->
+            </ion-card>
+            </marquee>
+    </ion-content>
+</ion-content>

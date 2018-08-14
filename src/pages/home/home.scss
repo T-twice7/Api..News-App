@@ -1,0 +1,61 @@
+page-home {
+    background-color: black;
+div.scroll-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url('../../assets/imgs/iphone-x-tapeta-4.jpg');
+    background-size: cover;
+    
+    // marquee{
+    //     margin-left: 50px;
+      
+    //     // align-items: center;
+    // }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+        border-radius: 100px;
+      
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        background-color: transparent;
+        margin: 30px;
+     
+        img{
+            position: fixed;
+            max-width: inherit;
+            max-height: inherit;
+            background-color: transparent;
+            border-radius: 100px;
+        }
+        h1{
+            position: relative;
+            color: white;
+            text-shadow: 0 0 20px white;
+            font-family: initial;
+            font-style: oblique;
+            font-weight: bolder;
+            font-size: 50px;
+            z-index: 10;
+            }
+          p{
+            position: relative;
+            color: white;
+            text-shadow: 0 0 15px white;
+            font-family: initial;
+            font-size: 25px;
+            z-index: 10;
+          }
+    
+       
+    }
+  
+}
+}

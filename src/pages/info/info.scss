@@ -1,0 +1,59 @@
+page-info {
+    ion-navbar {
+        border: 3px outset aliceblue;
+        background-color: black;
+        letter-spacing: 4px;
+        font-family: cursive;
+        button{
+            float: right;
+            
+            border: 3px outset aliceblue;
+            height: 30px;
+            width: 40px;
+           
+        }
+    }
+    div.scroll-content{
+    
+    // background-color: cornflowerblue ;
+    background-color: rgba(14, 12, 12, 0.911);
+    
+    justify-content: center;
+    align-items: center;
+        ion-card{
+            background-color: aliceblue;
+            border: 1px outset white;
+            img{
+                height: 300px;
+                border: 5px outset white;
+            }
+            h1{
+            //     font-family: cursive;
+            // font-stretch: condensed;
+            // text-shadow: -2px -1px 2px whitesmoke;
+            font-weight: bolder;
+            }
+            p{
+                font-family: initial;
+                font-stretch: condensed;
+                font-weight: bolder;
+                color: black;
+            }
+           
+           a{
+               color: rgb(24, 97, 231);
+               text-decoration: none;
+           }
+           marquee{
+            //    margin-right: 100px;
+           }
+           p.pel{
+               float: right;
+               font-family: monospace;
+               color: black;
+               font-style: italic;
+           }
+        }
+    
+    }
+}

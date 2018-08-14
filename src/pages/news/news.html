@@ -1,0 +1,29 @@
+
+  <ion-header>
+
+      <ion-navbar color="dark" >
+        <button  (click)="pop()"><ion-icon name="list"></ion-icon></button>
+      </ion-navbar>
+    
+    </ion-header>
+  
+  <ion-content padding >
+    <div>
+      <!-- <video src="../../assets/VIDS/Social Media Wrap with Nina Oosthuizen  03 August 2018.mp4"  poster="../../assets/imgs/news1.gif" controls></video> -->
+      <marquee direction="left" scrollamount="90" behavior="slide" loop="1"> 
+  <img class="News" src="../../assets/imgs/news.jpg">
+  
+  </marquee>
+  <h4 class="head">Headlines</h4>
+<ion-list >
+      <ion-item *ngFor="let i of arr, let a = index" (click)="view(a)">
+          <ion-thumbnail item-end>
+              <img src="{{i.urlToImage}}" alt="W-Hnews...IMAGE">
+            </ion-thumbnail>
+            <h2>{{i.title}}</h2>
+           
+      </ion-item>
+    </ion-list>
+  </div>
+
+  </ion-content>

@@ -1,0 +1,106 @@
+page-news {
+    
+    ion-navbar {
+        border: 3px outset aliceblue;
+        background-color: black;
+        button{
+            float: right;
+            
+            border: 3px outset aliceblue;
+            height: 30px;
+            width: 40px;
+           
+        }
+    }
+    div.scroll-content{
+
+        
+        background-color: rgba(14, 12, 12, 0.911);
+        // position: fixed;
+        overflow: scroll;
+       
+        ion-title{
+            text-align: center;
+        }
+            
+           
+    
+img.News{
+    // position: fixed;
+    border: 4px inset aliceblue;
+    height: 200px;
+    width: 550px;
+}
+h4.head{
+    text-align: center;
+    background-color: rgb(34, 25, 25);
+    color: aliceblue;
+    font-family: cursive;
+    font-stretch: ultra-condensed;
+    letter-spacing: 5px;
+    border: 5px outset aliceblue;
+
+    
+ }
+ion-list{
+    // position: fixed;
+    position: absolute;
+    overflow: scroll;
+    height: 400px;
+    overflow-x: hidden;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    margin: 20px;
+    
+}
+        ion-item{
+          
+            border: 1px outset aliceblue;
+            // transition: width 2s;
+            background-color: bisque(238, 225, 225, 0.925);
+            height: 50px;
+            margin: 2px;
+                border-radius: 10px;
+                width: 300px;
+                // ion-thumbnail{
+                //     float: right;
+                // }
+              
+            img{
+                float: right;
+                box-shadow: -3px 2px 2px black;
+                border-left: none;
+                border-right: none;
+                // border: 4px inset white;
+                height: 50px;
+
+                width: 100px;
+                // margin-right: 0px;
+                // border-radius: 1em 1em 1em 1em/ 1em 1em 1em 1em;
+            }
+            
+            h2{
+                text-align: center;
+                // font-size: 25px;
+                font-family: monospace;
+                font-weight: bold;
+                color: black;
+                padding: 10px;
+            }
+        }
+        ion-item:hover{
+            cursor: pointer;
+            // width: 200px;
+        }
+        h2:visited{
+            color: goldenrod;
+        }
+        h2:hover{
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+    }
+}

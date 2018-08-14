@@ -1,0 +1,27 @@
+<ion-header>
+
+    <ion-navbar color="dark">
+        <ion-title>National Geographic news</ion-title>
+      <button (click)="home()"><ion-icon name="home"></ion-icon></button>
+     
+    </ion-navbar>
+  
+  </ion-header>
+
+
+<ion-content padding>
+
+                 
+                  <ion-list >
+                      
+                      <ion-item *ngFor="let i of naT, let a = index" (click)="viewN(a)">
+                          <ion-thumbnail item-start>
+                              <img src="{{i.urlToImage}}" alt="W-Hnews...IMAGE">
+                            </ion-thumbnail>
+                           
+                            <h2>{{i.title}}</h2>
+                           
+                      </ion-item>
+                    </ion-list>
+                  
+</ion-content>
